@@ -1,0 +1,20 @@
+.block-contact-form {
+	
+
+	&__form {
+
+		@media (min-width: $screen-md-min) {
+			padding-right: 50px;
+		}
+	}
+
+	&__desc {
+		font-size: 25px;
+		line-height: 1.445588em;
+		padding-top: 14px;
+
+		@media (min-width: $screen-md-min) {
+			padding-left: 50px;
+		}
+	}
+}

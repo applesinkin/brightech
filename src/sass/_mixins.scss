@@ -1,0 +1,33 @@
+@mixin placeholder() {
+	&::-webkit-input-placeholder {
+		opacity: 1;
+
+		@media (min-width: $screen-md-min) {
+			opacity: 0;
+		}
+	}
+
+	&:-moz-placeholder {
+		opacity: 1;
+
+		@media (min-width: $screen-md-min) {
+			opacity: 0;
+		}
+	}
+
+	&::-moz-placeholder {
+		opacity: 1;
+
+		@media (min-width: $screen-md-min) {
+			opacity: 0;
+		}
+	}
+
+	&:-ms-input-placeholder {
+		opacity: 1;
+
+		@media (min-width: $screen-md-min) {
+			opacity: 0;
+		}
+	}
+}

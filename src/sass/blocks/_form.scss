@@ -1,0 +1,104 @@
+.form {
+
+	&__label {
+		display: none;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.2em;
+		width: 175px;
+
+		@media (min-width: $screen-md-min) {
+			display: block;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			font-size: 28px;
+		}
+	}
+
+	&__field {
+		align-items: center;
+		border-color: $color__light;
+		border-style: solid;
+		border-width: 0 0 3px;
+		display: flex;
+		position: relative;
+
+		&--error {
+			border-color: $color__brand1;
+		}
+	}
+
+	&__input {
+		background-color: transparent;
+		border: none;
+		box-shadow: none;
+		display: block;
+		color: $color__light;
+		font-family: $font__text;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.2em;
+		outline: none;
+		padding: 20px 0;
+		width: 100%;
+		@include placeholder();
+
+		@media (min-width: $screen-xl-min) {
+			font-size: 28px;
+		}
+	}
+
+	&__error {
+		color: $color__brand1;
+		font-size: 14px;
+		line-height: 1.2em;
+		position: absolute;
+		right: 0;
+		top: 10px;
+	}
+
+	&__btn {
+		padding-top: 40px;
+	}
+
+	&__checkbox {
+		display: none;
+	}
+
+	&__checkbox-label {
+		align-items: center;
+		display: flex;
+		padding-top: 52px;
+	}
+
+	&__checkmark {
+		background-color: $color__light;
+		content: "";
+		display: block;
+		height: 23px;
+		margin-right: 27px;
+		position: relative;
+		width: 23px;
+
+		&:before {
+			border-color: transparent transparent $color__brand2 $color__brand2;
+			border-style: solid;
+			border-width: 0 0 0.090909em 0.090909em;
+			content: '';
+			display: none;
+			height: 0.357143em;
+			left: 50%;
+			margin-top: -0.071429em;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%) rotate(-46.27deg);
+			transform-origin: 50% 50%;
+			width: 0.571429em;
+		}
+	}
+
+	[type="checkbox"]:checked ~ &__checkmark::before {
+		display: block;
+	}
+}

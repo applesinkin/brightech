@@ -1,0 +1,41 @@
+.btn {
+	background-color: $color__grey;
+	border: none;
+	border-radius: 0;
+	color: $color__light;
+	cursor: pointer;
+	display: inline-block;
+	font-family: $font__text;
+	font-size: $fz;
+	font-weight: 500;
+	line-height: 1.2em;
+	min-width: 120px;
+	padding: 8px 20px;
+	text-align: center;
+	transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+	
+	&:hover {
+		background-color: darken($color__brand2, 20%);
+		color: $color__light;
+	}
+
+	&--submit {
+		background-color: lighten($color__grey, 20%);
+		font-size: 23px;
+		min-width: 200px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+		pointer-events: none;
+
+		@media (min-width: $screen-lg-min) {
+			min-width: 417px;
+			padding-bottom: 48px;
+			padding-top: 48px;
+		}
+	}
+
+	&--submit-active {
+		background-color: $color__grey;
+		pointer-events: auto;
+	}
+}

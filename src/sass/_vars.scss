@@ -1,0 +1,67 @@
+// SCREEN SIZES
+$screen-xxs-max:  479.98px;
+$screen-xs-min:  480px;
+$screen-xs-max:  575.98px;
+$screen-sm-min:  576px;
+$screen-sm-max:  767.98px;
+$screen-md-min:  768px;
+$screen-md-max:  991.98px;
+$screen-lg-min:  992px;
+$screen-lg-max:  1199.98px;
+$screen-xl-min:  1200px;
+$screen-xxl-min:  1400px;
+
+$main_width: 1800px;
+
+
+// FONTS
+$font__text: "Roboto", sans-serif;
+$font__title: $font__text;
+
+
+// COLORS
+$color__blue: #2fa6de;
+$color__green: #4ac47f;
+$color__red: #ff0036;
+
+$color__light: #ffffff;
+$color__dark: #000000;
+$color__grey: #5c5c5c;
+
+$color__brand1: $color__red;
+$color__brand2: $color__green;
+
+$color__bg: $color__light;
+$color__text: $color__dark;
+$color__title: $color__text;
+$color__link: $color__brand1;
+$color__hover: $color__red;
+
+
+// TYPOGRAPHY
+$fz: 22px;
+$fz__lh: 1.961467em;
+
+// h2
+$h1: 72px;
+$h1__lh: 1.2em;
+
+// h2
+$h2: 48px;
+$h2__lh: 1.2em;
+
+// h3
+$h3: 38px;
+$h3__lh: 1.2em;
+
+// h4
+$h4: 26px;
+$h4__lh: 1.2em;
+
+// h5
+$h5: 20px;
+$h5__lh: 1.2em;
+
+// h6
+$h6: 18px;
+$h6__lh: 1.2em;

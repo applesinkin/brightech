@@ -1,0 +1,13 @@
+.block-contact-info {
+	
+	&__title {
+		padding-bottom: 50px;
+	}
+
+	&__support {
+
+		@media (min-width: $screen-lg-min) {
+			padding-left: 49px;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+.page-block {
+	padding-bottom: 50px;
+	padding-top: 50px;
+
+	&__title {
+
+		&--contact-form {
+
+			@media(min-width: $screen-md-min) {
+				padding-bottom: 40px;
+			}
+		}
+	}
+
+	&--contact-info {
+
+		@media(min-width: $screen-md-min) {
+			padding-bottom: 125px;
+		}
+	}
+
+	&--contact-map {
+		background: $color__grey;
+		color: $color__light;
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+
+	&--contact-form {
+		background: $color__brand2;
+		color: $color__light;
+
+		@media(min-width: $screen-md-min) {
+			padding-bottom: 175px;
+			padding-top: 140px;
+		}
+	}
+}

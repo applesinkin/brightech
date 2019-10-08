@@ -1,0 +1,33 @@
+.tabs {
+	padding-top: 46px;
+
+	&__filters {
+		display: flex;
+		flex-wrap: wrap;
+		text-transform: uppercase;
+		margin-left: -14px;
+		margin-right: -14px;
+	}
+
+	&__filters-item {
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+
+	&__filter {
+		
+		&.active,
+		&:hover {
+			color: $color__brand2;
+		}
+	}
+
+	&__body {
+		display: none;
+		padding-top: 50px;
+
+		&.opened {
+			display: block;
+		}
+	}
+}
